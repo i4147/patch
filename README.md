@@ -98,6 +98,16 @@ python apply_patches.py --dry-run --strict
   `1` = failures with `--strict`, `2` = bad arguments, unreadable input, or no
   patch files found.
 
+## Helper scripts
+
+The scratch analysis/verification scripts used while developing this tool live
+in [`tools/`](tools/HELPERS.md) (patch inspection, pre-image reconstruction,
+`git apply` comparison, mixed-patch demo). Run them all with:
+
+```sh
+bash tools/check.sh
+```
+
 ## Tests
 
 ```sh
